@@ -1,0 +1,24 @@
+.container {
+  padding: 24px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.count {
+}
+
+.footer {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 0.75rem;
+}
