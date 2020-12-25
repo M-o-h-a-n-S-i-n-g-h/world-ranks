@@ -1,0 +1,49 @@
+.country__container {
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+}
+
+.heading__name,
+.heading__population {
+  flex: 1;
+  padding: 20px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.heading button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  background-color: var(--background-color-light);
+  margin-bottom: 15px;
+  box-shadow: var(--box-shadow);
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+
+.row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.name,
+.population {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+}

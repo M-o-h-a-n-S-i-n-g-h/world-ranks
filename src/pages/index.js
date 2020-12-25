@@ -1,9 +1,16 @@
 import Layout from "../Components/Layout/Layout.component";
+import SearchInput from "../Components/SearchInput/SearchInput.component.jsx";
+import CountriesTable from "../Components/CountriesTable/CountriesTable.component";
+import styles from "../styles/Home.module.css";
+
 export default function Home({ countries }) {
-  console.log(countries);
   return (
     <Layout>
-      <div>Found {countries.length} countries from the API</div>
+      <div className={styles.count}>
+        Found {countries.length} countries from the API
+      </div>
+      <SearchInput placeholder="Filter Input By Name,Region or Sub-Region" />
+      <CountriesTable countries={countries} />
     </Layout>
   );
 }
