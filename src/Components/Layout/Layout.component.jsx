@@ -14,14 +14,16 @@ const Layout = ({ children, title = "World Ranks Title" }) => {
 
   const switchTheme = () => {
     if (theme === "light") {
-      setTheme("dark");
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else if (theme === "dark") {
-      setTheme("light");
-      localStorage.setItem("theme", "light");
-      document.documentElement.setAttribute("data-theme", "light");
+      saveTheme("dark");
+    } else {
+      saveTheme("light");
     }
+  };
+
+  const saveTheme = (theme) => {
+    setTheme(theme);
+    localStorage.setItem("theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
   };
 
   return (
