@@ -2,3 +2,6 @@
   margin: 12px 0px;
   color: var(--text-color);
 }
+.keyword {
+  color: var(--text-color);
+}

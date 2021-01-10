@@ -3,11 +3,12 @@
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  max-width: 1130px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .header {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,4 +19,13 @@
   margin-top: 32px;
   text-align: center;
   font-size: 0.75rem;
+}
+
+.themeswitcher {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+
+  color: var(--text-color-secondary);
+  margin-left: 12px;
 }
